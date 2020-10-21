@@ -1,0 +1,33 @@
+@media (max-width: 850px) {
+  body {
+    padding: 125px 0;
+  }
+  
+  /* MAIN */
+  .main {
+    gap: 15px;
+    grid-template: auto auto / auto;
+    grid-template-areas: 'menu'
+                         'storage'; 
+    min-width: unset;
+    width: 87%;
+  }
+
+
+
+  /* MENU */
+  .menu {
+    justify-self: center;
+  }
+  /* STORAGE */
+  .storage {
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('../challenge-heading/images/bg-mobile.png');
+  }
+}

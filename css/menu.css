@@ -1,38 +1,42 @@
 .menu {
   background-color: #1d2c67;
-  width: 350px;
   border-radius: 10px;
-  padding: 39px 41px;
   border-top-right-radius: 100px;
+  padding: 39px 41px;
+  width: 350px;
 }
 .menu ul {
   margin-top: 33px;
 }
 .menu li {
   background-color: #0c122c;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
   display: inline-block;
   height: 48px;
-  width: 48px;
-  border-radius: 10px;
   margin-right: 16px;
+  width: 48px;
 }
 .menu .option-document {
   background-image: url('../challenge-heading/images/icon-document.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .menu .option-folder {
   background-image: url('../challenge-heading/images/icon-folder.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .menu .option-upload {
   background-image: url('../challenge-heading/images/icon-upload.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .menu li a {
   display: block;
   height: 48px;
   width: 48px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .menu {
+    width: 100%;
+    padding-bottom: 37px;
+  }
 }

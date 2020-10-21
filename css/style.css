@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 /* COLOR REFERENCE */
-.color {
+/* .color {
   color: #ffa399 to #ff4d97;
   color: #dddbff;
   color: #848794;
   color: #1d2c67;
   color: #0c122c;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -21,27 +21,25 @@ img {
 body {
   background-color: #0c122c;
   background-image: url('../challenge-heading/images/bg-desktop.png');
-  background-repeat: no-repeat;
   background-position: bottom;
-
-  padding: 290px 0;
-
-  font-size: 14px;
+  background-repeat: no-repeat;
+  background-size: auto;
   font-family: 'Raleway', sans-serif;
-
+  font-size: 14px;
+  padding: 290px 0;
+  height: ;
 }
 
 /* MAIN */
 .main {
-  min-width: 800px;
-  max-width: 1440px;
-  width: 64%;
-  margin: 0 auto;
-
   display: grid;
-  grid-template: auto / fit-content(350px) auto;
-  grid-template-areas: 'menu storage';
   gap: 30px;
+  grid-template: auto / fit-content(350px) minmax(350px, auto);
+  grid-template-areas: 'menu storage';
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 800px;
+  width: 64%;
 }
 
 /* MENU */
@@ -49,11 +47,10 @@ body {
   grid-area: menu;
 }
 
-
 /* STORAGE */
 .storage {
+  align-self: end;
   grid-area: storage;
   justify-self: right;
-  align-self: end;
 }
 
