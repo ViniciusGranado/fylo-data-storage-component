@@ -23,19 +23,25 @@ body {
   background-image: url('../challenge-heading/images/bg-desktop.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-attachment: fixed;
 
-  padding: 290px 260px;
+  padding: 290px 0;
+
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 /* MAIN */
 .main {
+  min-width: 800px;
   max-width: 1440px;
+  width: 64%;
   margin: 0 auto;
 
   display: grid;
-  grid-template: auto / auto auto;
+  grid-template: auto / fit-content(350px) auto;
   grid-template-areas: 'menu storage';
+  gap: 30px;
 }
 
 /* MENU */
@@ -47,5 +53,7 @@ body {
 /* STORAGE */
 .storage {
   grid-area: storage;
+  justify-self: right;
+  align-self: end;
 }
 
