@@ -1,0 +1,51 @@
+/* FONT IMPORT */
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* COLOR REFERENCE */
+.color {
+  color: #ffa399 to #ff4d97;
+  color: #dddbff;
+  color: #848794;
+  color: #1d2c67;
+  color: #0c122c;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+
+body {
+  background-color: #0c122c;
+  background-image: url('../challenge-heading/images/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  padding: 290px 260px;
+}
+
+/* MAIN */
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template: auto / auto auto;
+  grid-template-areas: 'menu storage';
+}
+
+/* MENU */
+.menu {
+  grid-area: menu;
+}
+
+
+/* STORAGE */
+.storage {
+  grid-area: storage;
+}
+
